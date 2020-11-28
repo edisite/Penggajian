@@ -1,0 +1,33 @@
+1. Data Karyawan Action Add Data Otomatis: 
+ - Tambah data list table
+ - Data BPJS Ketenagakerjaan
+ - Data BPJS Kesehatan
+ - Data Absensi
+ - Data Penggajian	
+	======================================================================(done)
+ 
+2. Absensi dan Pengajian Ada range bulan tahun
+
+3. Laporan Bulan dan Tahun
+	======================================================================(done)
+
+4. Gaji kotor di hilangkan : 
+	======================================================================(Done)
+	
+5. Di Data Jabatan, 
+	-IPK Dihilangkan
+		- Form Jabatan "Insentif Produktivitas Kerja" di hapus ===========(Done)
+		- Edit Jabatan "Insentif Produktivitas Kerja" di hapus ===========(Done)
+		- datatable field IPK di Hapus ===================================(Done)
+		- di DB  table jabatan field "insentif_produktivitas_kerja" 
+		(IPK di hapus) ===================================================(Done)
+	-Keterangan : IPK: Insentif Produktifitas Kerja Dihilangkan ==========(Done)
+6. Di table Pengajian ditambahkan IPK
+
+Permintaan baru
+-Gimana yah mas biar terupdate klo ada angka yang terubah tanpa harus klik action>edit (masalahnya di video)
+-Apabila, salah satu karyawan di hapus di menu Data Karyawan, karyawan yg bersangkutan pada menu (absensi dan Penggajian) akan ikut terhapus
+ jadi control hapus cuman ada di menu karyawan ========= done
+-otomatis untuk action (delete dan Edit) pada absensi dan penggajian dihapus
+-bisa kah mas di history laporan itu sistemnya record kalau udah masuk ke bulan baru, maka data bulan lalu gak bakal terhapus akan tersimpan, karena saya liat itu menumpuk jadinya mas dipenggajian dan absensi  ============== done
+
