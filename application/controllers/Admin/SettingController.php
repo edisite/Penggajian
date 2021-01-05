@@ -198,4 +198,23 @@ class SettingController extends CI_Controller
                 
 		redirect('admin/setting/ketenagakerjaan');
 	}
+	public function backup_database(){
+		$this->load->dbutil();
+
+        $prefs = array(     
+            'format'      => 'sql',             
+            'filename'    => "backupdb_penggajian_".date("Ymd-His").'.sql'
+            );
+
+        $backup =& $this->dbutil->backup($prefs); 
+
+        $db_name = "backupdb_penggajian_".date("Ymd-His") .'.sql';
+        $save = FCPATH.'assets/db/'.$db_name;
+        $this->load->helper('file');
+        write_file($save, $backup); 
+
+
+        $this->load->helper('download');
+        force_download($db_name, $backup);
+	}
 }

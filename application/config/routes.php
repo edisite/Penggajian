@@ -123,6 +123,7 @@ $route['admin/setting/store']                               = 'Admin/SettingCont
 $route['admin/setting/edit/(:any)']                         = 'Admin/SettingController/edit/$1';
 $route['admin/setting/update']                              = 'Admin/SettingController/update';
 $route['admin/setting/delete/(:any)']                       = 'Admin/SettingController/delete/$1';
+$route['admin/setting/backup']                              = 'Admin/SettingController/backup_database';
 
 $route['admin/bpjs/ketenagakerjaan']                        = 'Admin/BPJSController/ketenagakerjaan_index';
 $route['admin/bpjs/ketenagakerjaan/create']                 = 'Admin/BPJSController/ketenagakerjaan_create';

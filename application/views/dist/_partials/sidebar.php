@@ -193,6 +193,19 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							</a>
 						</li>			
 					<?php	} ?>
+				
+				<li class="menu-header">DATABASE</li>
+				<?php
+				$arruser =  array("manager");
+				if(in_array($this->session->userdata('user_group'), $arruser)) {  
+					?>
+						<li class="<?= $this->uri->segment(3) == 'backup'  ? 'active' : ''; ?>">
+							<a class="nav-link" href="<?= base_url('admin/setting/backup') ?>">
+								<i class="fa fa-money-check"></i>
+								<span>Backup Database</span>
+							</a>
+						</li>			
+					<?php	} ?>
 			</ul>
 		<?php } ?>
 	</aside>
